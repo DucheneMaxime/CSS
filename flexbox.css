@@ -1,0 +1,62 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    }
+    * {
+    text-align: center;
+    }
+    header {
+    background-color: tomato;
+    }
+    .left-aside {
+    background-color: gold;
+    }
+    .right-aside {
+    background-color: hotpink;
+    }
+    main {
+    background-color: deepskyblue;
+    }
+    footer {
+    background-color: lightgreen;
+    }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.container * {
+    flex-basis: 100%;
+}
+
+/* For touchpad */
+@media screen and (min-width:600px) and (max-width: 800px){
+
+}
+
+/* For desktop */
+@media screen and (min-width: 800px){
+
+    header{
+        order: 1;
+    }
+
+    .left-aside{
+        order: 2;
+    }
+
+    main {
+        order: 3;
+        flex: 3 0px;
+    }
+
+    .right-aside{
+        order: 4;
+    }
+
+    footer{
+        order: 5;
+    }
+}
