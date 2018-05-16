@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+}
+
+#test1 {
+    background: linear-gradient(to bottom, blue, red);
+}
+
+#test2 {
+    background: linear-gradient(to right, red, green);
+}
+
+#test3 {
+    background: linear-gradient(to bottom, red, yellow);
+}
+
+#test4 {
+    background: linear-gradient(-90deg, red, yellow);
+}
